@@ -15,6 +15,10 @@
 		AC9E778326D0F97D00181865 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E775826D0F97A00181865 /* ContentView.swift */; };
 		AC9E778426D0F97D00181865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9E775926D0F97D00181865 /* Assets.xcassets */; };
 		AC9E778526D0F97D00181865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9E775926D0F97D00181865 /* Assets.xcassets */; };
+		AC9E779B26D100E200181865 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E779A26D100E200181865 /* CircleImage.swift */; };
+		AC9E779C26D100E200181865 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E779A26D100E200181865 /* CircleImage.swift */; };
+		AC9E779E26D1047A00181865 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E779D26D1047A00181865 /* MapView.swift */; };
+		AC9E779F26D1047A00181865 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E779D26D1047A00181865 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		AC9E777926D0F97D00181865 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9E777D26D0F97D00181865 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		AC9E777F26D0F97D00181865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9E779A26D100E200181865 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		AC9E779D26D1047A00181865 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,9 @@
 			children = (
 				AC9E775726D0F97A00181865 /* MyTutorialApp.swift */,
 				AC9E775826D0F97A00181865 /* ContentView.swift */,
+				AC9E779A26D100E200181865 /* CircleImage.swift */,
 				AC9E775926D0F97D00181865 /* Assets.xcassets */,
+				AC9E779D26D1047A00181865 /* MapView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -230,6 +238,9 @@
 		AC9E775226D0F97A00181865 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					bana,
+				);
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
@@ -309,7 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9E778226D0F97D00181865 /* ContentView.swift in Sources */,
+				AC9E779E26D1047A00181865 /* MapView.swift in Sources */,
 				AC9E778026D0F97D00181865 /* MyTutorialApp.swift in Sources */,
+				AC9E779B26D100E200181865 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +331,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9E778326D0F97D00181865 /* ContentView.swift in Sources */,
+				AC9E779F26D1047A00181865 /* MapView.swift in Sources */,
 				AC9E778126D0F97D00181865 /* MyTutorialApp.swift in Sources */,
+				AC9E779C26D100E200181865 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

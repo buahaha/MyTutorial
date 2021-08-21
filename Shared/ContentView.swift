@@ -9,8 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        VStack() {
+            MapView()
+                .frame(height: 300)
+            CircleImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
+            VStack(alignment: .leading) {
+                Text("Arka Gdynia!")
+                    .padding()
+                    .foregroundColor(.black)
+                    .accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                    .font(.title)
+                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.green/*@END_MENU_TOKEN@*/)
+                HStack {
+                    Text("Trolejbusy i morze...")
+                    Spacer()
+                    Text("Pomorskie")
+                }
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                Text("Coś więcej o...")
+                    .font(.title2)
+                Text("WIKI")
+            }
             .padding()
+            Spacer()
+        }
     }
 }
 
