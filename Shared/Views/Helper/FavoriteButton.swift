@@ -15,6 +15,7 @@ struct FavoriteButton: View {
         }, label: {
             Image(systemName: isSet ? "star.fill" : "star")
                 .foregroundColor(isSet ? Color.yellow : Color.gray)
+                .scaleEffect(isSet ? 2.33 : 1)
         })
     }
 }

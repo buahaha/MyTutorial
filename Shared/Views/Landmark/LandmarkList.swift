@@ -22,11 +22,17 @@ struct LandmarkList: View {
                     Text("Favorites")
                 }
                 ForEach(filteredLandmarks) { landmark in
-                    NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                        LandmarkRow(landmark: landmark)
-                }
+                    
+                        NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                            LandmarkRow(landmark: landmark)
+                       }
+                        
+                    
                 }
             }
+            .transition(.slide)
+            .animation(.easeIn(duration: 2.33))
+//            .animation(.ripple(index: 3))
             .navigationTitle("Viewables")
         }
     }
