@@ -13,7 +13,7 @@ import MapKit
 
 struct MapView: View {
     var coordinate: CLLocationCoordinate2D
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2DMake(54.51, 18.53), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2DMake(54.51, 18.53), span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
     
     var body: some View {
         Map(coordinateRegion: $region)
@@ -23,7 +23,7 @@ struct MapView: View {
     }
     
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
-        region = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+        region = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     }
 }
 
