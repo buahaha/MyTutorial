@@ -5,7 +5,7 @@
         "city": "Stara Słupia",
         "state": "świętokrzyskie",
         "id": 1001,
-        "isFeatured": false,
+        "isFeatured": true,
         "isFavorite": false,
         "park": "Łysogóry, Góry Świętokrzyskie",
         "coordinates": {

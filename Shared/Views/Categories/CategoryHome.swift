@@ -17,13 +17,15 @@ struct CategoryHome: View {
                 
             
             List() {
-                modelData.featured[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
-                    .listRowInsets(EdgeInsets())
-                    .transition(.slide)
+                PageView(pages: modelData.featured.map { FeatureCard(landmark: $0) })
+                       .aspectRatio(3 / 2, contentMode: .fit)
+//                modelData.featured[0].image
+//                    .resizable()
+//                    .scaledToFill()
+//                    .frame(height: 200)
+//                    .clipped()
+//                    .listRowInsets(EdgeInsets())
+//                    .transition(.slide)
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: modelData.categories[key]!)
                         .animation(.ripple(index: 1))
