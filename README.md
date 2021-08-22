@@ -11,3 +11,9 @@
 after modifing `landmarkData.json` to look like [this](./Shared/Resources/polskieGóry.json), all led me to creating my own landmark list
 
 ![loks like this2](SimulatorScreen2.png "MyTutorial part 2")
+
+## simple accounts and another view
+
+just like that
+
+![loks like this3](SimulatorScreen3.png "MyTutorial part 3")

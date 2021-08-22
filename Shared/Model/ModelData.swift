@@ -24,6 +24,8 @@ final class ModelData: ObservableObject {
     var featured: [Landmark] {
         landmarks.filter { $0.isFeatured }
     }
+    
+    @Published var profile = Profile.default
 }
 
 func load<T: Decodable>(filename: String) -> T {

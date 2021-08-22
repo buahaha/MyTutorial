@@ -30,8 +30,8 @@ struct LandmarkList: View {
                     
                 }
             }
-            .transition(.slide)
-            .animation(.easeIn(duration: 2.33))
+//            .transition(.slide)
+//            .animation(.easeIn(duration: 2.33))
 //            .animation(.ripple(index: 3))
             .navigationTitle("Viewables")
         }
